@@ -33,8 +33,8 @@ def upload_and_watermark():   # Function to upload and print watermark on image
     window.destroy()
 
 
-window = tk.Tk()
-window.geometry("300x250")
-button = tk.Button(window, text="Upload Image", command=upload_and_watermark)
-button.pack()
-window.mainloop()
+window = tk.Tk() # Creates a tkinter window 
+window.geometry("300x250") # Set the dimensions of window
+button = tk.Button(window, text="Upload Image", command=upload_and_watermark) # creates button with command parameter specifying its function
+button.pack() # Adding button onto window using "pack" layout manager
+window.mainloop() # Start the event loop 
